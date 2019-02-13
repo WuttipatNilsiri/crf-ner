@@ -86,7 +86,7 @@ def file2IOB(filename):
 
 # print(%%time)
 
-train_sents = file2IOB('eng.train')
+train_sents = file2IOB('./data/eng.train')
 # train_sents = list(nltk.corpus.conll2000.iob_sents('train.txt'))
 # test_sents = list(nltk.corpus.conll2000.iob_sents('test.txt'))
 
@@ -129,13 +129,13 @@ trainerNER.set_params({
 
 # print(trainer.params())
 
-trainerNER.train('eng.model')
-trainerNLP.train('eng.NLPmodel')
+trainerNER.train('./model/engNER.model')
+trainerNLP.train('./model/engNLP.model')
 
 # print(trainer.logparser.last_iteration)
 
-tagger = pycrfsuite.Tagger()
-tagger.open('eng.model')
+# tagger = pycrfsuite.Tagger()
+# tagger.open('engNER.model')
 
 # example_sent = test_sents[1]
 # print(example_sent)

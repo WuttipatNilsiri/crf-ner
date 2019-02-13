@@ -75,11 +75,11 @@ class chucker():
         
 c = chucker()
 
-result = c.word2IOB("Front Wing makes Ohara Rinne eat kakigori at Urashima")
+result = c.word2IOB("Rinne is co-founder of Front Wing in Mars")
 # print(result)
 
 tagger = pycrfsuite.Tagger()
-tagger.open('eng.model')
+tagger.open('./model/engNER.model')
 
 
 #############################
