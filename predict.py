@@ -75,7 +75,7 @@ class chucker():
         
 c = chucker()
 
-result = c.word2IOB("Wuttipat plan to study at Tokyo Tech University in Japan")
+result = c.word2IOB("John plan to study at Tokyo Tech University in Japan")
 # print(result)
 
 tagger = pycrfsuite.Tagger()
