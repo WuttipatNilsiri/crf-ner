@@ -75,7 +75,7 @@ class chucker():
         
 c = chucker()
 
-result = c.word2IOB("Rinne is co-founder of Front Wing in Mars")
+result = c.word2IOB("Wuttipat plan to study at Tokyo Tech University in Japan")
 # print(result)
 
 tagger = pycrfsuite.Tagger()
